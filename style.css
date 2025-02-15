@@ -1,8 +1,7 @@
-/* Gaya dasar */
 body {
     font-family: 'Playfair Display', serif;
-    background: linear-gradient(to right, #fbd3e9, #bb377d);
-    color: white;
+    background: linear-gradient(to right, #5d1a1a, #8b0000); /* Gradasi maroon */
+    color: #f5e1da; /* Warna krem untuk kontras */
     text-align: center;
     margin: 0;
     padding: 0;
