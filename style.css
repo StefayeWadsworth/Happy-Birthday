@@ -1,0 +1,151 @@
+body {
+  font-family: "Playfair Display", serif;
+  background: url("background.jpg") no-repeat center center/cover;
+  color: #5d4037;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.signature {
+  margin-top: 30px; /* Jarak lebih jauh dari paragraf terakhir */
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #fdebdd;
+  display: block;
+}
+
+.signature-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* Supaya lebih terpisah */
+}
+
+.ballerina-container {
+  position: relative; /* Pastikan container memiliki posisi relatif */
+  width: 90%;
+  height: 90px;
+  margin-bottom: 50px;
+}
+
+.ballerina {
+  position: absolute;
+  top: 10%; /* Atur jarak dari atas */
+  left: 50%;
+  transform: translateX(-50%) scale(0.6);
+  width: 90px;
+  height: auto;
+  animation: dance 4s infinite ease-in-out; /* Pastikan ada animasi */
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes dance {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-10px) translateX(-5px);
+  }
+  50% {
+    transform: translateY(0) translateX(5px);
+  }
+  75% {
+    transform: translateY(-10px) translateX(-5px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Dancing Script", serif;
+  color: #fdebdd;
+  margin-bottom: 50px;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  width: 50%;
+  margin: 0 auto;
+  color: #fdebdd;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+input {
+  font-family: "Playfair Display", serif;
+  padding: 10px;
+  border: 1px solid #f3edeb;
+  border-radius: 5px;
+}
+
+.frame {
+  width: 90%;
+  max-width: 800px;
+  height: 90vh;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(93, 64, 55, 0.8); /* Warna coklat elegan */
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.music-button:hover {
+  background: rgb(94, 48, 38);
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.music-button:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+#music-icon {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-animate {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
